@@ -1,0 +1,88 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/henrique/Área de Trabalho/Projeto final/job_application/app/models/headhunter.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/henrique/Área de Trabalho/Projeto final/job_application/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/henrique/Área de Trabalho/Projeto final/job_application/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/henrique/Área de Trabalho/Projeto final/job_application/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/henrique/Área de Trabalho/Projeto final/job_application/app/controllers/home_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/henrique/Área de Trabalho/Projeto final/job_application/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/henrique/Área de Trabalho/Projeto final/job_application/app/channels/application_cable/channel.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/henrique/Área de Trabalho/Projeto final/job_application/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/henrique/Área de Trabalho/Projeto final/job_application/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1589857787
+  }
+}

@@ -1,0 +1,20 @@
+---
+pt-BR:
+  activerecord:
+    models:
+      headhunter: Headhunter
+    attributes:
+      headhunter:
+        email: Email
+        password: Senha
+        password_confirmation: Confirme a senha
+  devise: 
+    sessions:
+      new:
+        log_in: Entrar
+    shared:
+      links:
+        sign_in: Cadastre-se
+    registrations:
+      new:
+        sign_up: Cadastrar
