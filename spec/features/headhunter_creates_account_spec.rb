@@ -23,7 +23,8 @@ feature 'headhunter creates account' do
       expect(page).to have_content("Login efetuado com sucesso")
       expect(page).to have_link('Cadastrar vagas')
     end
-
+  end
+  context 'authentication' do
     scenario 'and login' do
       headhunter = create(:headhunter)
 
@@ -36,8 +37,14 @@ feature 'headhunter creates account' do
       expect(page).to have_content("Login efetuado com sucesso")
       expect(page).to have_link('Cadastrar vagas')
     end
-  end
 
+    scenario 'and not logged in' do
+      visit root_path
+
+      expect(page).to_not have_link('Cadastrar vagas')
+    end
+  end
+  
   context 'create valid' do
     scenario 'and password and password confirmation dont match' do
       visit new_headhunter_session_path

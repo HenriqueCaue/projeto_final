@@ -1,3 +1,5 @@
 <h1>Bem vindo ao sistema de vagas de emprego</h1>
 
-<h3><%= link_to 'Cadastrar vagas'%></h3>
+<% if headhunter_signed_in? %>
+  <h3><%= link_to 'Cadastrar vagas'%></h3>
+<% end %> 
