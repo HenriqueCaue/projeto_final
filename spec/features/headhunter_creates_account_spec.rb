@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 feature 'headhunter creates account' do
-  context 'create and view buttons' do
-    scenario 'view form' do
+  context 'create' do
+    scenario 'and view form' do
       visit new_headhunter_session_path
       click_on 'Cadastre-se' 
 
@@ -20,7 +20,20 @@ feature 'headhunter creates account' do
       fill_in 'Confirme a senha', with: '123456789'
       click_on 'Cadastrar'
 
-      expect(page).to have_content("Login efetuado com sucesso.")
+      expect(page).to have_content("Login efetuado com sucesso")
+      expect(page).to have_link('Cadastrar vagas')
+    end
+
+    scenario 'and login' do
+      headhunter = create(:headhunter)
+
+      visit new_headhunter_session_path
+      
+      fill_in 'Email', with: headhunter.email
+      fill_in 'Senha', with: headhunter.password
+      click_on 'Entrar'
+
+      expect(page).to have_content("Login efetuado com sucesso")
       expect(page).to have_link('Cadastrar vagas')
     end
   end
@@ -39,7 +52,7 @@ feature 'headhunter creates account' do
     end
 
     scenario 'and the email already exists' do
-      headhunter = Headhunter.create!(email: 'headhunter@teste.com', password: '123456789')
+      headhunter = create(:headhunter, email: 'headhunter@teste.com')
       visit new_headhunter_session_path
       click_on 'Cadastre-se'
 
