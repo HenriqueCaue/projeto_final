@@ -1,0 +1,23 @@
+<h1>Nova vaga</h1>
+
+<% @jobopp.errors.full_messages.each do |message| %>
+  <p><%= message %></p>
+<% end %>
+
+<%= form_with model: @jobopp, local: true do |job| %>
+  <%= job.label :title %>
+  <%= job.text_field :title %>
+  <%= job.label :location %>
+  <%= job.text_field :location %>
+  <%= job.label :description %>
+  <%= job.text_field :description %>
+  <%= job.label :qualifications %>
+  <%= job.text_field :qualifications %>
+  <%= job.label :salary_range %>
+  <%= job.number_field :salary_range %>
+  <%= job.label :experience_level %>
+  <%= job.select(:experience_level, JobOpportunity::EXPERIENCES) %>
+  <%= job.label :deadline %>
+  <%= job.date_field :deadline %>
+  <%= job.submit 'Cadastrar vaga' %>
+<% end %>

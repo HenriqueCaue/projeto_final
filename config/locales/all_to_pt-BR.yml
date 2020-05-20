@@ -3,11 +3,20 @@ pt-BR:
   activerecord:
     models:
       headhunter: Headhunter
+      job_opportunity: Vagas de Emprego
     attributes:
       headhunter:
         email: Email
         password: Senha
         password_confirmation: Confirme a senha
+      job_opportunity: 
+        title: Título
+        description: Descrição
+        qualifications: Habilidades desejadas
+        salary_range: Faixa salarial
+        experience_level: Nível de experiência
+        deadline: Inscrições até
+        location: Local
   devise: 
     sessions:
       new:

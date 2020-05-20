@@ -1,0 +1,13 @@
+<h1><%= @jobopp.title %></h1>
+<h3> <%= JobOpportunity.human_attribute_name(:location) %>: 
+  <%= @jobopp.location %> </h3>
+<h3> <%= JobOpportunity.human_attribute_name(:deadline) %>:
+  <%= l @jobopp.deadline %> </h3>
+<p> <%= JobOpportunity.human_attribute_name(:description) %>:
+  <%= @jobopp.description %></p>
+<p> <%= JobOpportunity.human_attribute_name(:qualifications) %>:
+  <%= @jobopp.qualifications %></p>
+<p> <%= JobOpportunity.human_attribute_name(:salary_range) %>:
+  <%= number_to_currency(@jobopp.salary_range) %></p>
+<p> <%= JobOpportunity.human_attribute_name(:experience_level) %>:
+  <%= @jobopp.experience_level %></p>
