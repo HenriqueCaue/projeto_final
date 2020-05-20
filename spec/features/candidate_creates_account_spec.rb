@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-feature 'headhunter creates account' do
-  context 'create' do
+feature 'candidate creates account' do
+  context 'view form' do
     scenario 'and view form' do
-      visit new_headhunter_session_path
+      visit new_candidate_session_path
       click_on 'Cadastre-se' 
 
       expect(page).to have_content('Email')
@@ -12,46 +12,40 @@ feature 'headhunter creates account' do
     end
 
     scenario 'succesfully' do
-      visit new_headhunter_session_path
+      visit new_candidate_session_path
       click_on 'Cadastre-se'
 
-      fill_in 'Email', with: 'headhunter@teste.com'
+      fill_in 'Email', with: 'candidate@teste.com'
       fill_in 'Senha', with: '123456789'
       fill_in 'Confirme a senha', with: '123456789'
       click_on 'Cadastrar'
 
       expect(page).to have_content("Login efetuado com sucesso")
-      expect(page).to have_link('Cadastrar vagas')
+      expect(page).not_to have_link('Cadastrar vagas')
     end
   end
   
   context 'authentication' do
     scenario 'and login' do
-      headhunter = create(:headhunter)
+      candidate = create(:candidate)
 
-      visit new_headhunter_session_path
+      visit new_candidate_session_path
       
-      fill_in 'Email', with: headhunter.email
-      fill_in 'Senha', with: headhunter.password
+      fill_in 'Email', with: candidate.email
+      fill_in 'Senha', with: candidate.password
       click_on 'Entrar'
 
       expect(page).to have_content("Login efetuado com sucesso")
-      expect(page).to have_link('Cadastrar vagas')
-    end
-
-    scenario 'and not logged in' do
-      visit root_path
-
-      expect(page).to_not have_link('Cadastrar vagas')
+      expect(page).not_to have_link('Cadastrar vagas')
     end
   end
   
   context 'create valid' do
     scenario 'and password and password confirmation dont match' do
-      visit new_headhunter_session_path
+      visit new_candidate_session_path
       click_on 'Cadastre-se'
 
-      fill_in 'Email', with: 'headhunter@teste.com'
+      fill_in 'Email', with: 'candidate@teste.com'
       fill_in 'Senha', with: '123456789'
       fill_in 'Confirme a senha', with: '12345678'
       click_on 'Cadastrar'
@@ -60,11 +54,11 @@ feature 'headhunter creates account' do
     end
 
     scenario 'and the email already exists' do
-      headhunter = create(:headhunter, email: 'headhunter@teste.com')
-      visit new_headhunter_session_path
+      candidate = create(:candidate, email: 'candidate@teste.com')
+      visit new_candidate_session_path
       click_on 'Cadastre-se'
 
-      fill_in 'Email', with: 'headhunter@teste.com'
+      fill_in 'Email', with: 'candidate@teste.com'
       fill_in 'Senha', with: '123456789'
       fill_in 'Confirme a senha', with: '123456789'
       click_on 'Cadastrar'
@@ -73,7 +67,7 @@ feature 'headhunter creates account' do
     end
 
     scenario 'and cant be blank' do
-      visit new_headhunter_session_path
+      visit new_candidate_session_path
       click_on 'Cadastre-se'
 
       fill_in 'Email', with: ''

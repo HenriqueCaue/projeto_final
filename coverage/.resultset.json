@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/henrique/Área de Trabalho/Projeto final/job_application/app/models/headhunter.rb": {
+      "/home/henrique/Área de Trabalho/Projeto final/job_application/app/models/candidate.rb": {
         "lines": [
           1,
           null,
@@ -15,6 +15,16 @@
         "lines": [
           1,
           1,
+          null
+        ]
+      },
+      "/home/henrique/Área de Trabalho/Projeto final/job_application/app/models/headhunter.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          null,
           null
         ]
       },
@@ -45,7 +55,7 @@
         "lines": [
           1,
           1,
-          9,
+          11,
           null,
           null
         ]
@@ -54,10 +64,11 @@
         "lines": [
           1,
           1,
+          null,
+          1,
           2,
           null,
           null,
-          1,
           1,
           2,
           null,
@@ -126,6 +137,6 @@
         }
       }
     },
-    "timestamp": 1589950327
+    "timestamp": 1589952675
   }
 }

@@ -9,6 +9,10 @@ pt-BR:
         email: Email
         password: Senha
         password_confirmation: Confirme a senha
+      candidate:
+        email: Email
+        password: Senha
+        password_confirmation: Confirme a senha
       job_opportunity: 
         title: Título
         description: Descrição
