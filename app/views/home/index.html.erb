@@ -8,7 +8,7 @@
   Nenhuma vaga criada
 <% end %>
 
-<%= @jobapp.each do |job| %>
+<% @jobapp.each do |job| %>
   <h2><%= link_to job.title, job_opportunity_path(id: job.id) %></h2>
   <p><%= l job.deadline %></p>
   <p><%= job.location %></p>
