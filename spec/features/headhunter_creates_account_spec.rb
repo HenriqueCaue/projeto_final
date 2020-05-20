@@ -76,9 +76,6 @@ feature 'headhunter creates account' do
       visit new_headhunter_session_path
       click_on 'Cadastre-se'
 
-      fill_in 'Email', with: ''
-      fill_in 'Senha', with: ''
-      fill_in 'Confirme a senha', with: ''
       click_on 'Cadastrar'
 
       expect(page).to have_content("não pode ficar em branco")
