@@ -3,7 +3,9 @@ pt-BR:
   activerecord:
     models:
       headhunter: Headhunter
+      candidate: Candidato
       job_opportunity: Vagas de Emprego
+      profile: Perfil
     attributes:
       headhunter:
         email: Email
@@ -21,6 +23,15 @@ pt-BR:
         experience_level: Nível de experiência
         deadline: Inscrições até
         location: Local
+      profile:
+        name: Nome
+        birthday: Nascimento
+        social_name: Nome Social
+        document: CPF
+        formation: Formação
+        description: Descrição
+        experience: Experiência
+        candidate: Candidato
   devise: 
     sessions:
       new:

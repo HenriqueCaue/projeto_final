@@ -8,6 +8,8 @@
           null,
           1,
           null,
+          null,
+          1,
           null
         ]
       },
@@ -34,6 +36,39 @@
           null
         ]
       },
+      "/home/henrique/Área de Trabalho/Projeto final/job_application/app/models/profile.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/henrique/Área de Trabalho/Projeto final/job_application/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/henrique/Área de Trabalho/Projeto final/job_application/app/controllers/profiles_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/henrique/Área de Trabalho/Projeto final/job_application/app/controllers/home_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/home/henrique/Área de Trabalho/Projeto final/job_application/app/models/job_opportunity.rb": {
         "lines": [
           1,
@@ -45,57 +80,44 @@
           null
         ]
       },
-      "/home/henrique/Área de Trabalho/Projeto final/job_application/app/controllers/application_controller.rb": {
+      "/home/henrique/Área de Trabalho/Projeto final/job_application/app/mailers/application_mailer.rb": {
         "lines": [
-          1,
-          null
-        ]
-      },
-      "/home/henrique/Área de Trabalho/Projeto final/job_application/app/controllers/home_controller.rb": {
-        "lines": [
-          1,
-          1,
-          12,
-          null,
-          null
-        ]
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       },
       "/home/henrique/Área de Trabalho/Projeto final/job_application/app/controllers/job_opportunities_controller.rb": {
         "lines": [
-          1,
-          1,
+          0,
+          0,
           null,
-          1,
-          3,
+          0,
+          0,
+          0,
           null,
+          0,
+          0,
+          0,
           null,
-          1,
-          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
+          0,
           null,
-          1,
-          2,
-          2,
-          2,
-          1,
+          0,
           null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          2,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/home/henrique/Área de Trabalho/Projeto final/job_application/app/mailers/application_mailer.rb": {
-        "lines": [
+          0,
+          0,
           0,
           0,
           0,
@@ -138,6 +160,6 @@
         }
       }
     },
-    "timestamp": 1589995230
+    "timestamp": 1590016135
   }
 }

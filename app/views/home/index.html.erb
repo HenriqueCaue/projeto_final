@@ -4,6 +4,10 @@
   <h3><%= link_to 'Cadastrar vagas', new_job_opportunity_path%></h3>
 <% end %> 
 
+<% if candidate_signed_in? %>
+  <h3><%= link_to 'Perfil', profiles_path %></h3>
+<% end %>
+
 <% if @jobapp.empty? %>
   Nenhuma vaga criada
 <% end %>

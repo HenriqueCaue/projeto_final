@@ -1,0 +1,24 @@
+<h1><%= Profile.human_attribute_name(:name) %>: <%= @profile.name %></h1>
+
+<h2><%= Profile.human_attribute_name(:social_name) %>: 
+  <%= @profile.social_name %></h2>
+
+<p><%= Profile.human_attribute_name(:document) %>: <%= @profile.document %></p>
+
+<p><%= Profile.human_attribute_name(:birthday) %>: 
+  <%= l @profile.birthday %></p>
+
+<p><%= Profile.human_attribute_name(:formation) %>: 
+  <%= @profile.formation %></p>
+
+<p><%= Profile.human_attribute_name(:description) %>: 
+  <%= @profile.description %></p>
+  
+<p><%= Profile.human_attribute_name(:experience) %>: 
+  <%= @profile.experience %></p>
+
+<p><%= Candidate.human_attribute_name(:email) %>: 
+  <%= @profile.candidate.email %></p>
+
+  <%= link_to 'Editar perfil' %>
+  <%= link_to 'Ver vagas', root_path %>

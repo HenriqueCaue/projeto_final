@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_20_051252) do
+ActiveRecord::Schema.define(version: 2020_05_20_203355) do
 
   create_table "candidates", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -49,4 +49,19 @@ ActiveRecord::Schema.define(version: 2020_05_20_051252) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "profiles", force: :cascade do |t|
+    t.string "name"
+    t.date "birthday"
+    t.string "social_name"
+    t.string "document"
+    t.string "formation"
+    t.string "description"
+    t.string "experience"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.integer "candidate_id", null: false
+    t.index ["candidate_id"], name: "index_profiles_on_candidate_id"
+  end
+
+  add_foreign_key "profiles", "candidates"
 end
