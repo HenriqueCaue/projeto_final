@@ -11,3 +11,9 @@
   <%= number_to_currency(@jobopp.salary_range) %></p>
 <p> <%= JobOpportunity.human_attribute_name(:experience_level) %>:
   <%= @jobopp.experience_level %></p>
+
+<% if candidate_signed_in? %>
+  <%= link_to 'Candidatar-se' %>
+<% else %>
+  <%= link_to 'Candidatar-se', new_candidate_session_path %>
+<% end %>
