@@ -11,12 +11,13 @@ class JobOpportunitiesController < ApplicationController
 
   def create
     @jobopp = JobOpportunity.new(job_params)
+    @jobopp.active = true
     if @jobopp.save
       redirect_to @jobopp
     else
       render :new
     end
-    #@jobopp.active = true
+    
   end
 
   private

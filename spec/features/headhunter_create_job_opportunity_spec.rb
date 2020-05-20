@@ -22,6 +22,9 @@ feature 'headhunter create job opportunity' do
 
     expect(current_path).to eq job_opportunity_path(JobOpportunity.last.id)
 
+    vaga = JobOpportunity.last
+
+    expect(vaga.active).to eq(true)
     expect(page).to have_content('Analista de sistemas')
     expect(page).to have_content('Local: Av. Paulista')
     expect(page).to have_content('Descrição: Atuar com ASP NET / '\
