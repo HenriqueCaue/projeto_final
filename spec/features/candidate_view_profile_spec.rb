@@ -23,7 +23,7 @@ feature 'Candidate view profile' do
       "Já trabalhei em algumas empresas internacionais.")
     expect(page).to have_content("Email: #{candidate.email}")
 
-    expect(page).to have_link('Editar perfil')
+    expect(page).to have_link('Criar perfil')
     expect(page).to have_link('Ver vagas')
   end
 

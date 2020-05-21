@@ -1,0 +1,19 @@
+<h1>Edite seu perfil</h1>
+
+<%= form_with model: @profile, local: true do |pro|%>
+  <%= pro.label :name%>
+  <%= pro.text_field :name%>
+  <%= pro.label :social_name%>
+  <%= pro.text_field :social_name%>
+  <%= pro.label :document%>
+  <%= pro.text_field :document%>
+  <%= pro.label :birthday%>
+  <%= pro.date_field :birthday%>
+  <%= pro.label :formation%>
+  <%= pro.text_field :formation%>
+  <%= pro.label :description%>
+  <%= pro.text_field :description%>
+  <%= pro.label :experience%>
+  <%= pro.text_field :experience%>
+  <%= pro.submit 'Salvar'%>
+<% end %>

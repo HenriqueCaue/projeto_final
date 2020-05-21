@@ -1,5 +1,5 @@
 class JobOpportunitiesController < ApplicationController
-  before_action :authenticate_headhunter!, only: [:new]
+  before_action :authenticate_headhunter!, only: [:new, :create]
 
   def show
     @jobopp = JobOpportunity.find(params[:id])

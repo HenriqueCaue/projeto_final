@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :candidates, path: 'candidates_accounts'
-  resources :profiles, only: %i[index show]
+  devise_for :candidates
+  resources :profiles, only: %i[index show new create]
   devise_for :headhunters
   root 'home#index'
 

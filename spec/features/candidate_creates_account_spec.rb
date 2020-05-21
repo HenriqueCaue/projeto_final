@@ -20,7 +20,7 @@ feature 'candidate creates account' do
       fill_in 'Confirme a senha', with: '123456789'
       click_on 'Cadastrar'
 
-      expect(page).to have_content("Login efetuado com sucesso")
+      expect(page).to have_content ('Login efetuado com sucesso')
       expect(page).not_to have_link('Cadastrar vagas')
     end
   end
