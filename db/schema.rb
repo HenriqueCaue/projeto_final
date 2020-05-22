@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_20_203355) do
+ActiveRecord::Schema.define(version: 2020_05_22_044620) do
+
+  create_table "applies", force: :cascade do |t|
+    t.string "why_apply"
+    t.integer "job_opportunity_id", null: false
+    t.integer "candidate_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["candidate_id"], name: "index_applies_on_candidate_id"
+    t.index ["job_opportunity_id"], name: "index_applies_on_job_opportunity_id"
+  end
 
   create_table "candidates", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -63,5 +73,7 @@ ActiveRecord::Schema.define(version: 2020_05_20_203355) do
     t.index ["candidate_id"], name: "index_profiles_on_candidate_id"
   end
 
+  add_foreign_key "applies", "candidates"
+  add_foreign_key "applies", "job_opportunities"
   add_foreign_key "profiles", "candidates"
 end

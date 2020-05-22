@@ -6,6 +6,7 @@ pt-BR:
       candidate: Candidato
       job_opportunity: Vagas de Emprego
       profile: Perfil
+      apply: Aplicar
     attributes:
       headhunter:
         email: Email
@@ -31,6 +32,10 @@ pt-BR:
         formation: Formação
         description: Descrição
         experience: Experiência
+        candidate: Candidato
+      apply:
+        why_apply: 'Por que quer essa vaga?'
+        job_opportunity: Vagas de Emprego
         candidate: Candidato
   devise: 
     sessions:

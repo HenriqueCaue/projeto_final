@@ -5,4 +5,5 @@ class Candidate < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_one :profile
+  has_many :applies
 end

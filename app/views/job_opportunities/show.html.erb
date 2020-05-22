@@ -13,7 +13,7 @@
   <%= @jobopp.experience_level %></p>
 
 <% if candidate_signed_in? %>
-  <%= link_to 'Candidatar-se' %>
+  <%= link_to 'Candidatar-se', new_apply_path(id: @jobopp)%>
 <% else %>
   <%= link_to 'Candidatar-se', new_candidate_session_path %>
 <% end %>

@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   resources :profiles, only: %i[index show new create]
   devise_for :headhunters
   root 'home#index'
-
+  resources :applies, only: %i[show new create]
   resources :job_opportunities, only: %i[show new create]
 end

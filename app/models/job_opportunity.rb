@@ -4,4 +4,6 @@ class JobOpportunity < ApplicationRecord
 
   validates :title, :location, :description, :qualifications, :salary_range, 
     :experience_level, :deadline, presence: true
+
+  has_many :applies
 end
